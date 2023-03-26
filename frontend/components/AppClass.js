@@ -74,7 +74,7 @@ export default class AppClass extends React.Component {
 
   reset = () => {
     // Use this helper to reset all states to their initial values.
-    console.log('reset button has been clicked')
+    console.log('reset button clicked')
     this.setState({
       ...this.state,
       message: '',
@@ -112,7 +112,7 @@ export default class AppClass extends React.Component {
         index: this.state.index + 3,
         steps: this.state.steps + 1
       })
-    }else this.setState({...this.state, message: (`You can't got ${direction}`)})
+    }else this.setState({...this.state, message: (`You can't go ${direction}`)})
   }
 
   //move = (evt) => {
